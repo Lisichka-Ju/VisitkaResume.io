@@ -219,7 +219,7 @@
             border-color: var(--accent);
         }
 
-        /* ================= АВАТАРКА (БЕЗ ЛИШНЕГО ТЕКСТА) ================= */
+        /* ================= АВАТАРКА ================= */
         .hero-image {
             display: flex;
             justify-content: center;
@@ -237,7 +237,6 @@
             align-items: center;
         }
 
-        /* Внешнее вращающееся кольцо */
         .ring-outer {
             position: absolute;
             inset: 0;
@@ -250,7 +249,6 @@
             mask-composite: exclude;
         }
 
-        /* Внутреннее вращающееся кольцо (в обратную сторону) */
         .ring-inner {
             position: absolute;
             inset: 18px;
@@ -266,7 +264,6 @@
 
         @keyframes spin { to { transform: rotate(360deg); } }
 
-        /* Внутренний круг с фото/заглушкой */
         .avatar-inner {
             position: absolute;
             inset: 36px;
@@ -287,7 +284,6 @@
             object-fit: cover;
         }
 
-        /* Заглушка (показывается если нет фото) */
         .avatar-placeholder {
             font-size: 60px;
             color: var(--accent);
@@ -491,6 +487,7 @@
             border-radius: 24px;
             overflow: hidden;
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            display: block;
         }
 
         .project-card:hover {
@@ -706,7 +703,7 @@
                     <div class="ring-inner"></div>
                     <div class="avatar-inner">
                         <!-- Если есть фото, раскомментируйте и вставьте ссылку: -->
-                        <img src="photo.jpg" alt="">
+                        <img src="photo.jpg" alt="Юлия Болий">
                         
                         <!-- Заглушка, пока нет фото -->
                         <!-- <i class="fas fa-user avatar-placeholder"></i> -->
@@ -725,9 +722,9 @@
             </div>
             <div class="about-grid">
                 <div class="glass-card about-main reveal">
-                    <p>Я начинающий специальст по информационным системам, увлечённый созданием сайтов и дизайнов. Мой путь начался с HTML и CSS, позже добавились и другие.</p>
-                    <p>Мне очень нравится создавить новые дизайны, концепты и идеи. Мне важно, чтобы мои разработки были удобны и понятны.</p>
-                    <p>Сейчас активно изучаю C# ведь хочу написать свою собственную игру, а также PHP для более удобного fullstek прогроммирования.</p>
+                    <p>Я начинающий специалист по информационным системам, увлечённый созданием сайтов и дизайнов. Мой путь начался с HTML и CSS, позже добавились и другие технологии.</p>
+                    <p>Мне очень нравится создавать новые дизайны, концепты и идеи. Мне важно, чтобы мои разработки были удобны и понятны.</p>
+                    <p>Сейчас активно изучаю C#, ведь хочу написать свою собственную игру, а также PHP для более удобного fullstack программирования.</p>
                 </div>
                 <div class="about-stats">
                     <div class="stat-card reveal">
@@ -762,12 +759,12 @@
                 <div class="timeline-item reveal">
                     <span class="year">2022</span>
                     <h3>Первые шаги в веб-разработке</h3>
-                    <p>Изучила основы HTML, CSS и Js, создала свой первый сайт и мне очень понравилось наблюдать за тем как идея становится реальностью.</p>
+                    <p>Изучила основы HTML, CSS и JS, создала свой первый сайт — и мне очень понравилось наблюдать за тем, как идея становится реальностью.</p>
                 </div>
                 <div class="timeline-item reveal">
                     <span class="year">2023</span>
                     <h3>JavaScript и интерактивность</h3>
-                    <p>Осваивать JavaScript начала почти сразу как написала первую страницу сайта и поняла, что хочется разнообразия.</p>
+                    <p>Осваивать JavaScript начала почти сразу, как написала первую страницу сайта, и поняла, что хочется разнообразия.</p>
                 </div>
                 <div class="timeline-item reveal">
                     <span class="year">2024</span>
@@ -783,7 +780,7 @@
         </div>
     </section>
 
-<!-- НАВЫКИ -->
+    <!-- НАВЫКИ -->
     <section id="skills">
         <div class="container">
             <div class="section-header reveal">
@@ -853,36 +850,36 @@
                 <h2>Мои <span>проекты</span></h2>
             </div>
             <div class="portfolio-grid">
-                <div class="project-card reveal">
-                    <div class="project-image"><i class="https://lisichka-ju.github.io/Mini-Games/"></i></div>
+                <a href="https://lisichka-ju.github.io/Mini-Games/" target="_blank" class="project-card reveal">
+                    <div class="project-image"><i class="fas fa-gamepad"></i></div>
                     <div class="project-info">
-                        <h3>Тренировачный сайт</h3>
-                        <p>Этот сайт являестся сборником сайтов которые я писала в качестве тренировки.</p>
+                        <h3>Тренировочный сайт</h3>
+                        <p>Этот сайт является сборником сайтов, которые я писала в качестве тренировки.</p>
                         <div class="project-tags">
                             <span>HTML</span><span>CSS</span><span>JS</span>
                         </div>
                     </div>
-                </div>
-                <div class="project-card reveal">
-                    <div class="project-image"><i class="https://lisichka-ju.github.io/HTML/index.html"></i></div>
+                </a>
+                <a href="https://lisichka-ju.github.io/HTML/index.html" target="_blank" class="project-card reveal">
+                    <div class="project-image"><i class="fas fa-globe"></i></div>
                     <div class="project-info">
                         <h3>Сайт №1</h3>
-                        <p>Это мой первый сайт который я написала, с него начался мой путь с программирование.</p>
+                        <p>Это мой первый сайт, который я написала. С него начался мой путь в программировании.</p>
                         <div class="project-tags">
                             <span>HTML</span><span>CSS</span>
                         </div>
                     </div>
-                </div>
-                <div class="project-card reveal">
-                    <div class="project-image"><i class="https://github.com/Lisichka-Ju/Kursovaya"></i></div>
+                </a>
+                <a href="https://github.com/Lisichka-Ju/Kursovaya" target="_blank" class="project-card reveal">
+                    <div class="project-image"><i class="fas fa-plane"></i></div>
                     <div class="project-info">
-                        <h3>Туристическое агенство</h3>
-                        <p>Это курсовое задание, которое нам давали на третьем курсе. </p>
+                        <h3>Туристическое агентство</h3>
+                        <p>Это курсовое задание, которое нам давали на третьем курсе.</p>
                         <div class="project-tags">
-                            <span>С#</span><span>PostgreSQL</span>
+                            <span>C#</span><span>PostgreSQL</span>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </section>
